@@ -181,18 +181,17 @@ button{font-family:inherit}
 /* voices */
 .vlay{transition:transform .2s linear}
 /* family map */
-.dmap path{opacity:.12;transition:opacity .7s ease}
-.dmap.on path{opacity:1}
+.dmap path{opacity:.5}
 .fsite{position:absolute;left:-22px;top:-22px;width:44px;height:44px;margin:0;padding:0;border:0;background:transparent;cursor:pointer;display:flex;align-items:center;justify-content:center}
-.fpin{display:block;border-radius:50%;background:#e74011;transition:transform .55s cubic-bezier(.3,1.7,.5,1),box-shadow .3s}
-.fsite:hover .fpin,.fpin.sel{box-shadow:0 0 0 6px rgba(252,201,120,.45)}
-.fline{position:absolute;left:0;top:0;height:1px;background:#d8a539;transform-origin:0 0;transition:transform .45s ease;pointer-events:none}
-.flab{position:absolute;white-space:nowrap;font-size:16px;line-height:1;padding:4px 6px;background:#00331d;pointer-events:none;transition:opacity .45s}
+.fpin{display:block;border-radius:50%;background:#e1251b;box-shadow:0 0 10px 2px rgba(225,37,27,.55);transition:transform .6s cubic-bezier(.3,1.6,.5,1),box-shadow .3s}
+.fsite:hover .fpin,.fpin.sel{box-shadow:0 0 0 3px rgba(255,255,255,.9),0 0 14px 4px rgba(225,37,27,.6)}
+.flab{position:absolute;left:0;top:0;white-space:nowrap;font-size:15px;line-height:1;letter-spacing:.2px;color:#ffffff;text-shadow:0 1px 6px rgba(0,30,15,.9),0 0 2px rgba(0,30,15,.9);pointer-events:none;transition:opacity .5s}
+.flab.sel{font-weight:700}
 .fitem{display:flex;align-items:baseline;justify-content:space-between;gap:16px;width:100%;min-height:52px;box-sizing:border-box;margin:0;padding:12px 4px;border:0;border-bottom:1px solid rgba(252,201,120,.3);background:transparent;color:rgba(255,255,255,.86);text-align:left;cursor:pointer;font-size:19px}
 .fitem:hover,.fitem[aria-pressed="true"]{color:#ffffff}
 .fitem[aria-pressed="true"] .fdot{background:#e74011;border-color:#e74011}
 .fdot{display:inline-block;width:10px;height:10px;margin-right:12px;box-sizing:border-box;border:1.5px solid #fcc978;transform:rotate(45deg)}
-@media (max-width:760px){.flab,.fline{display:none}}
+@media (max-width:760px){.flab{display:none}}
 /* admissions form */
 .seg{display:flex;border:1.5px solid #00331d;border-radius:6px;overflow:hidden}
 .seg button{flex:1 1 0;min-height:48px;margin:0;border:0;background:transparent;color:#00331d;font-size:16px;font-weight:600;cursor:pointer}
@@ -215,6 +214,6 @@ button{font-family:inherit}
 <body>
 <div id="app"></div>
 <noscript><p style="font-family:Helvetica,Arial,sans-serif;padding:24px">Please enable JavaScript to view the Malvern College Egypt homepage.</p></noscript>
-<script src="/app.js?v=198916dd80"></script>
+<script src="/app.js?v=52c1480958"></script>
 </body>
 </html>
